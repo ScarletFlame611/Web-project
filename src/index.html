@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <img src='img/logo.png'>
+        <button class ='btn' style="margin-right: auto; float: right;"> Выйти из аккаунта </button>
+     </header>
+     <section style="margin-top: 40px; margin-right: auto; margin-left: auto; width: 1240px; height: 1100px;">
+        <div style="margin-bottom: 40px;">
+            <button class ='btn' style="margin-left: auto; margin-bottom: 16px;"> На главную </button> <br>
+            <h1 style="display: inline-block; margin-right: 16px;">Создание профиля </h1>
+            <h4 style="display: inline-block; margin-right: 16px;">/</h4>
+            <h4 style="display: inline-block">О себе</h4> <br>
+            <progress max="1000" value="70"></progress>
+        </div  >
+        
+        <div  style="padding-top: 40px; width: 35%; float: left;  margin-right: 60px;">
+            
+            <form  method="post" enctype="multipart/form-data">
+                <label class="input-file" >
+                    <p class="avatar-text">Аватар профиля</p>
+                       <input type="file" name="file">		
+                       <span >Загрузить</span>
+                       <p class="download-text">Загрузите фотографию весом не более 10мб</p>
+                 </label>
+                 <div class="input-text ">
+                    <input class="name_input" type="name" id="name" name="name" placeholder="" value="">
+                    <label class="name_label" for="name">Имя и фамилия</label>
+                  </div>
+                <div class="radio_sex">
+                    <input type="radio" id="male" name="sex" value="male" />
+                    <label for="contactChoice1">Парень</label>
+              
+                    <input type="radio" id="female" name="sex" value="female" />
+                    <label for="contactChoice2">Девушка</label>
+                 </div>
+                <div> 
+                    <input type="date" class="input_date">
+                </div>
+                <div class="input-text ">
+                    <input class="name_input" type="text" id="text" name="name" value="" placeholder="">
+                    <label class="name_label" for="text">Телеграмм</label>
+                  </div>
+                <div class="input-text ">
+                    <input class="name_input" type="text" id="text" name="name" value="" placeholder="">
+                    <label class="name_label" for="text">Номер телефона</label>
+                  </div>
+                <div class="input-text ">
+                    <input class="name_input" type="text" id="text" name="name" value="" placeholder="" style="height: 150px;">
+                    <label class="name_label" for="text">О себе</label><br>
+                  </div>
+                  <span class="small-text">Например: Редко готовлю, но люблю ботать на кухне по ночам. Хочу завести собаку. Очень люблю читать, играть в хорроры и смотреть аниме. Открыт к общению и взаимопомощи :)</span> 
+            </form>
+            
+        </div>
+        <div style="padding-top: 40px; margin-left: auto;
+        margin-right: 0; display: inline-block; width: 700px; ">
+            <span class="text-show"> Так будет выглядеть твоя будущая страница </span>
+            <div  style="margin-top: 16px; 
+            box-shadow: 0px 1.13351px 4.29362px 0px rgba(133, 94, 152, 0.03),
+             0px 2.86674px 10.85888px 0px rgba(133, 94, 152, 0.04), 0px 5.84789px 22.15109px 0px rgba(133, 94, 152, 0.05),
+              0px 5.84789px 22.15109px 0px rgba(133, 94, 152, 0.05); border-radius: 32px; padding: 20px">
+                <div style="display:inline-block">
+                    <img class="photo-img">
+                <btn class="show-contact"> Показать контакты </btn>
+                </div>
+                
+                <div style=" display:inline-block; vertical-align: top; margin-left: 20px;">
+                    <span class="name_text"> Саша Фефелов</span><br>
+                    <span class="info"> Парень </span>
+                    <span class="info"> 21 год </span>
+                    <div style="background-color: #EEEEF1; width: 120px; height: 11px; display: inline-block; border-radius: 4px"> </div>
+                    <div style="background-color: #EEEEF1; width: 121px; height: 17px; display: block; border-radius: 4px; margin-top: 10px; margin-bottom: 10px;"> </div>
+                    <span class="info"> Мне очень нравится устраивать вечеринки, дебоширить и мазать с... </span>
+                    <div style="background-color: #EEEEF1; width: 406px; height: 113px; display: block; border-radius: 8px; margin-top: 10px; margin-bottom: 10px;"> </div>
+                </div>
+            </div>
+            <div  style="margin-top: 16px; 
+            box-shadow: 0px 1.13351px 4.29362px 0px rgba(133, 94, 152, 0.03),
+             0px 2.86674px 10.85888px 0px rgba(133, 94, 152, 0.04), 0px 5.84789px 22.15109px 0px rgba(133, 94, 152, 0.05),
+              0px 5.84789px 22.15109px 0px rgba(133, 94, 152, 0.05); border-radius: 32px; padding: 20px">
+              <span class="block_text"> Мы совсем ничего про тебя не знаем</span><br>
+              <span class="block_text_small">Расскажи о себе. <br>
+                Люди пишут тем, кому доверяют. Тем более при поиске соседа.</span><br>
+            </div>
+
+        </div>
+     </section>
+     <div style='margin-top: 40px; margin-right: auto; margin-left: auto; width: 1240px; height: 100px;'>
+        <btn class="continue_btn"> Продолжить</btn>
+        </div>
+     <footer>
+        <div class="footer-content">
+            <h2 class="email_adress"> Support@homeet.com </h2>
+        <span class="text_footer_small"> Техническая поддержка</span><br>
+        <span class="menu_text"> О сервисе</span>
+        <span class="menu-text"> Контакты</span>
+        <span class="menu-text"> Политика конфиденциальности</span>
+        <hr size=1px width=1240px style="margin-top: 80px; margin-bottom: 80px; opacity: 0.2;
+        background: #7953C3;">
+        <span class="text_footer_small">Предложение не является публичной офертой.<br> 
+            Сервис не несет ответственности за действия пользователей, достоверность информации и т.д.</span>
+        </div>
+        
+     </footer>
+     <hr size=12px style="background: #7953C3; margin-bottom: 0%;">
+</body>
+</html>
