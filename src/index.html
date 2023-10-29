@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Document</title>
 </head>
 <body>
     <header> 
+        
         <img src='img/logo.png'>
+        
         <button class ='btn' style="margin-right: auto; float: right;"> Выйти из аккаунта </button>
+        
      </header>
      <section style="margin-top: 40px; margin-right: auto; margin-left: auto; width: 1240px; height: 1100px;">
         <div style="margin-bottom: 40px;">
@@ -25,19 +29,19 @@
             <form  method="post" enctype="multipart/form-data">
                 <label class="input-file" >
                     <p class="avatar-text">Аватар профиля</p>
-                       <input type="file" name="file">		
+                       <input type="file" name="file" >		
                        <span >Загрузить</span>
                        <p class="download-text">Загрузите фотографию весом не более 10мб</p>
                  </label>
-                 <div class="input-text ">
-                    <input class="name_input" type="name" id="name" name="name" placeholder="" value="">
+                 <div class="input-text">
+                    <input class="name_input" type="name" id="name" name="name" placeholder="" value="" class="text_for_name">
                     <label class="name_label" for="name">Имя и фамилия</label>
                   </div>
                 <div class="radio_sex">
-                    <input type="radio" id="male" name="sex" value="male" />
+                    <input type="radio" id="male" name="sex" value="Парень" class="rb" />
                     <label for="contactChoice1">Парень</label>
               
-                    <input type="radio" id="female" name="sex" value="female" />
+                    <input type="radio" id="female" name="sex" value="Девушка" class="rb" />
                     <label for="contactChoice2">Девушка</label>
                  </div>
                 <div> 
@@ -73,8 +77,8 @@
                 
                 <div style=" display:inline-block; vertical-align: top; margin-left: 20px;">
                     <span class="name_text"> Саша Фефелов</span><br>
-                    <span class="info"> Парень </span>
-                    <span class="info"> 21 год </span>
+                    <span class="info" id="sex_current"> Парень </span>
+                    <span class="info" id="age"> 21 год </span>
                     <div style="background-color: #EEEEF1; width: 120px; height: 11px; display: inline-block; border-radius: 4px"> </div>
                     <div style="background-color: #EEEEF1; width: 121px; height: 17px; display: block; border-radius: 4px; margin-top: 10px; margin-bottom: 10px;"> </div>
                     <span class="info"> Мне очень нравится устраивать вечеринки, дебоширить и мазать с... </span>
@@ -109,6 +113,7 @@
         </div>
         
      </footer>
+     <script src="js/script.js"></script>
      <hr size=12px style="background: #7953C3; margin-bottom: 0%;">
 </body>
 </html>
